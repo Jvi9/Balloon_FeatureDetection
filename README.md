@@ -1,8 +1,14 @@
-# Balloon_FeatureDetection
-Feature detection algorithm in beta test that allow to process imagery from a balloon without metadata
+# Mosaic Tool
 
-To run this Python script, the user needs to install the following libraries:
+Feature detection algorithm for balloon imagery, designed to process images without metadata and generate mosaics using computer vision techniques. The code leverages feature detection, matching, and homography estimation to create a panoramic mosaic from a series of high-altitude images.
 
+## Features
+- **Automatic image loading**: Load images from a folder for processing.
+- **Feature detection**: Supports both SIFT and ORB detectors to find and match keypoints between images.
+- **Mosaic creation**: Combines images into a single mosaic using cumulative homography transformations.
+- **Visualization tools**: Display feature matches and final mosaic.
+
+## Requirements
 OpenCV (cv2): This library is used for computer vision tasks such as reading images, detecting features, and processing images.
 
 Install using: pip install opencv-python
